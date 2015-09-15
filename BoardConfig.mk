@@ -6,7 +6,7 @@ USE_CAMERA_STUB := true
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := mt6753
-TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := cortex-a53
@@ -44,3 +44,16 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_RECOVERY_INITRC := device/alps/k05ts_a/recovery/init.mt6753.rc
 TARGET_RECOVERY_FSTAB := device/alps/k05ts_a/recovery/recovery.fstab
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness\"
+
+#twrp
+DEVICE_RESOLUTION := 1080x1920
+DEVICE_SCREEN_HEIGHT := 1920
+DEVICE_SCREEN_WIDTH := 1080
+TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone2/temp
+#TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
+#BOARD_USE_FRAMEBUFFER_ALPHA_CHANNEL := true
+#TARGET_DISABLE_TRIPLE_BUFFERING := false
+TW_CUSTOM_BATTERY_PATH := /sys/devices/platform/battery/power_supply/battery
+TW_THEME := portrait_hdpi
+HAVE_SELINUX := true
+#TODO: fix SELinux, fix kernel panic

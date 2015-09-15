@@ -16,7 +16,11 @@ endif
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
-    $(LOCAL_PATH)/recovery/init.recovery.mt6753.rc:root/init.recovery.mt6753.rc \
+    device/alps/k05ts_a/recovery/init.recovery.mt6753.rc:recovery/root/init.recovery.mt6753.rc \
+    device/alps/k05ts_a/recovery/init.mt6753.rc:recovery/root/init.mt6753.rc \
+    device/alps/k05ts_a/recovery/init.recovery.mt6753.rc:root/init.recovery.mt6753.rc \
+    device/alps/k05ts_a/recovery/init.mt6753.rc:root/init.mt6753.rc \
+    device/alps/k05ts_a/recovery/twrp.fstab:recovery/root/etc/twrp.fstab \
 #    $(LOCAL_PATH)/rootdir/recovery.fstab:recovery.fstab
 #    $(LOCAL_PATH)/rootdir/init.rc:root/init.rc \
 
