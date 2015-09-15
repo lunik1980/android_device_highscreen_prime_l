@@ -13,6 +13,8 @@ on early-init
 
 on init
     export PATH /sbin:/system/bin
+    # needed for TWRP
+    export LD_LIBRARY_PATH .:/sbin
     export ANDROID_ROOT /system
     export ANDROID_DATA /data
     export EXTERNAL_STORAGE /sdcard
