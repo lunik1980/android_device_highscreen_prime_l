@@ -2,9 +2,9 @@
 Device repository for Elephone P8000 CM12.1 (WIP)
 
 current state:
- * everything works except external sd mounting and signature checking
+ * Cyanogen Recovery works except external sd mounting
 
 TODO:
  * get external SD to work
- * fix signature checks (see http://forum.xda-developers.com/elephone-p8000/general/dev-cwm-elephone-p8000-t3200296)
+ * port TWRP
  * make tree compatible with CM12.1
