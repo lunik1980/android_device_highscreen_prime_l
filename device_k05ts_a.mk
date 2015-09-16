@@ -50,4 +50,5 @@ persist.service.acm.enable=0 \
 persist.sys.usb.config=mtp \
 ro.mount.fs=EXT4 \
 ro.persist.partition.support=no \
-ro.cip.partition.support=no
+ro.cip.partition.support=no \
+persist.service.adb.enable=1
