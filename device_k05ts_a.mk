@@ -16,11 +16,21 @@ endif
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
-     device/alps/k05ts_a/recovery/twrp.fstab:recovery/root/etc/twrp.fstab 
+     device/alps/k05ts_a/recovery/twrp.fstab:recovery/root/etc/twrp.fstab \
+     device/alps/k05ts_a/recovery/flyme/init.rc:recovery/root/init.rc \
+     device/alps/k05ts_a/recovery/flyme/init.aee.rc:recovery/root/init.aee.rc \
+     device/alps/k05ts_a/recovery/flyme/init.environ.rc:recovery/root/init.environ.rc \
+     device/alps/k05ts_a/recovery/flyme/init.modem.rc:recovery/root/init.modem.rc \
+     device/alps/k05ts_a/recovery/flyme/init.mt6735.rc:recovery/root/init.mt6735.rc \
+     device/alps/k05ts_a/recovery/flyme/init.mt6735.usb.rc:recovery/root/init.mt6735.usb.rc \
+     device/alps/k05ts_a/recovery/flyme/init.project.rc:recovery/root/init.project.rc \
+     device/alps/k05ts_a/recovery/flyme/init.ssd.rc:recovery/root/init.ssd.rc \
+     device/alps/k05ts_a/recovery/flyme/init.trace.rc:recovery/root/init.trace.rc \
+     device/alps/k05ts_a/recovery/flyme/init.usb.rc:recovery/root/init.usb.rc \
+
+
 #    device/alps/k05ts_a/recovery/init.recovery.mt6735.rc:recovery/root/init.recovery.mt6735.rc \
 #    device/alps/k05ts_a/recovery/init.mt6735.rc:recovery/root/init.rc \
-#    $(LOCAL_PATH)/rootdir/recovery.fstab:recovery.fstab
-#    $(LOCAL_PATH)/rootdir/init.rc:root/init.rc \
 
 PRODUCT_COPY_FILES_OVERRIDES += \
     recovery/root/file_contexts \
