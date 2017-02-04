@@ -1,22 +1,7 @@
-Device repository for Meizu M2 Mini (LineageOS)
+Device repository for Highscreen Prime L (LineageOS)
 ===========================
 
-Getting Started
----------------
 
-Initialize a repository with LineageOS:
-
-    repo init -u git://github.com/divis1969/android.git -b los-14.1-meilan2
-
-Optinally use a specific manifest (not a tip):
-
-    repo init -u git://github.com/divis1969/android.git -b los-14.1-meilan2 -m los-14.1-meilan2-v0.1.xml
-
-Build the code:
-
-    source build/envsetup.sh
-    breakfast meilan2
-    make -j 4 bacon showcommands 2>&1 | tee build.log
 
 Current state
 -------------
@@ -42,7 +27,6 @@ Known Issues
 - Telephony crashes eventually on location request from camera. 
 - Hardware OMX codecs are not working
 
-All issues: https://github.com/divis1969/android_device_meizu_meilan2/issues
 
 Change log
 ----------
